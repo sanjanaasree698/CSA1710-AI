@@ -1,0 +1,27 @@
+# Python Program to Transpose a Matrix
+
+# Input number of rows and columns
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+# Input matrix elements
+matrix = []
+print("Enter matrix elements:")
+for i in range(rows):
+    row = []
+    for j in range(cols):
+        row.append(int(input()))
+    matrix.append(row)
+
+# Transpose of matrix
+transpose = []
+for j in range(cols):
+    row = []
+    for i in range(rows):
+        row.append(matrix[i][j])
+    transpose.append(row)
+
+# Display transpose matrix
+print("Transpose of the Matrix:")
+for row in transpose:
+    print(row)
